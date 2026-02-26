@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shahd Walid | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .grayscale-img { filter: grayscale(100%); transition: all 0.3s ease; }
+        .grayscale-img:hover { filter: grayscale(0%); transform: scale(1.05); }
+        nav a { transition: all 0.3s ease; }
+        nav a:hover { color: #000; font-weight: 600; }
+        .btn-primary { background: #1a1a1a; color: white; transition: all 0.3s ease; }
+        .btn-primary:hover { background: #333; transform: translateY(-2px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .btn-secondary { border: 2px solid #1a1a1a; transition: all 0.3s ease; }
+        .btn-secondary:hover { background: #1a1a1a; color: white; }
+        .project-card { transition: all 0.3s ease; }
+        .project-card:hover { transform: translateY(-5px); }
+        section { scroll-margin-top: 80px; }
+    </style>
+</head>
+<body class="bg-white text-gray-900 font-sans">
+
+    <nav class="fixed top-0 w-full bg-white/95 backdrop-blur-md border-b border-gray-200 z-50 shadow-sm">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="font-black tracking-tighter text-lg uppercase">Shahd Walid</h1>
+            <div class="hidden md:flex space-x-8 text-xs font-bold uppercase tracking-widest">
+                <a href="#home" class="text-gray-900 hover:text-blue-600">Home</a>
+                <a href="#about" class="text-gray-900 hover:text-blue-600">About</a>
+                <a href="#skills" class="text-gray-900 hover:text-blue-600">Skills</a>
+                <a href="#projects" class="text-gray-900 hover:text-blue-600">Projects</a>
+                <a href="#contact" class="text-gray-900 hover:text-blue-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        <div class="flex-1 space-y-6">
+            <h2 class="text-5xl md:text-6xl font-black leading-tight">Hi, I'm <br><span class="text-blue-600">Shahd Walid</span></h2>
+            <p class="text-sm font-bold tracking-[0.3em] text-gray-600 uppercase">Frontend Developer | React Specialist</p>
+            <p class="text-gray-700 max-w-md leading-relaxed">I design and build modern, responsive web applications with a focus on performance, clean UI, and exceptional user experience. Specialized in React, JavaScript, and Tailwind CSS.</p>
+            <div class="flex gap-4 pt-4">
+                <a href="#projects" class="btn-primary px-6 py-3 text-sm font-bold uppercase tracking-wider inline-block">Explore Work</a>
+                <a href="https://github.com/shahdwalidd" target="_blank" class="btn-secondary px-6 py-3 text-sm font-bold uppercase tracking-wider inline-block">View GitHub</a>
+            </div>
+        </div>
+        <div class="flex-1">
+            <div class="bg-gradient-to-br from-blue-100 to-blue-50 aspect-square overflow-hidden grayscale-img border-4 border-blue-200 rounded-lg shadow-lg">
+                <img src="./WhatsApp Image 2026-02-26 at 11.06.44 AM.jpeg" alt="Shahd Walid" class="w-full h-full object-cover">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-gradient-to-r from-blue-50 to-gray-50 px-6">
+        <div class="max-w-3xl mx-auto text-center space-y-6">
+            <h3 class="text-3xl font-bold uppercase tracking-widest text-gray-900">About Me</h3>
+            <p class="text-gray-700 leading-relaxed text-lg">I am a passionate Frontend Developer who enjoys building clean and user-friendly interfaces. With expertise in React and modern web technologies, I create responsive and scalable web applications that deliver exceptional user experiences.</p>
+            <div class="pt-6 grid grid-cols-3 gap-6 text-center">
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-blue-600">5+</p>
+                    <p class="text-gray-600 text-sm uppercase">Projects</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-blue-600">2+</p>
+                    <p class="text-gray-600 text-sm uppercase">Years Experience</p>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-3xl font-bold text-blue-600">100%</p>
+                    <p class="text-gray-600 text-sm uppercase">Dedication</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-20 px-6 max-w-5xl mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-12 uppercase tracking-widest text-gray-900">Skills & Technologies</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-sm font-bold uppercase tracking-widest">
+            <div class="p-6 border-2 border-blue-200 shadow-sm rounded-lg bg-white hover:border-blue-600 hover:bg-blue-50 transition-all">HTML5</div>
+            <div class="p-6 border-2 border-blue-200 shadow-sm rounded-lg bg-white hover:border-blue-600 hover:bg-blue-50 transition-all">CSS3</div>
+            <div class="p-6 border-2 border-blue-200 shadow-sm rounded-lg bg-white hover:border-blue-600 hover:bg-blue-50 transition-all">JavaScript</div>
+            <div class="p-6 border-2 border-blue-200 shadow-sm rounded-lg bg-white hover:border-blue-600 hover:bg-blue-50 transition-all">React.js</div>
+            <div class="p-6 border-2 border-blue-200 shadow-sm rounded-lg bg-white hover:border-blue-600 hover:bg-blue-50 transition-all">Tailwind CSS</div>
+            <div class="p-6 border-2 border-blue-200 shadow-sm rounded-lg bg-white hover:border-blue-600 hover:bg-blue-50 transition-all">Bootstrap</div>
+            <div class="p-6 border-2 border-blue-200 shadow-sm rounded-lg bg-white hover:border-blue-600 hover:bg-blue-50 transition-all">Git & GitHub</div>
+            <div class="p-6 border-2 border-blue-200 shadow-sm rounded-lg bg-white hover:border-blue-600 hover:bg-blue-50 transition-all">Figma</div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-gradient-to-br from-gray-900 to-black text-white px-6">
+        <div class="max-w-5xl mx-auto">
+            <h3 class="text-3xl font-bold mb-12 uppercase tracking-widest">Featured Projects</h3>
+            <div class="grid md:grid-cols-2 gap-10">
+                <div class="project-card border-l-4 border-blue-500 pl-6 space-y-4 bg-gray-800/50 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold">01. Globaly Landing Page</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">Modern and responsive landing page showcasing services and features with smooth animations and interactive elements.</p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded">HTML</span>
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded"> CSS</span>
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded">BOOTSTRAP</span>
+                    </div>
+                    <a href="https://shahdwalidd.github.io/Globaly-landing-page/" target="_blank" class="inline-block text-blue-400 hover:text-blue-300 font-bold text-sm pt-2">View Live Demo →</a>
+                </div>
+                 <div class="project-card border-l-4 border-blue-500 pl-6 space-y-4 bg-gray-800/50 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold">02. TO-DO-React-App</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">A simple and interactive task management app built with React. Users can:Add, edit, complete, Filter tasks by status: All, Completed, Not Completed. Tasks are saved automatically in localStorage. Real-time updates using React hooks and useReducer.and delete tasks.</p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded">react</span>
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded"> js</span>
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded">bootstrap</span>
+                                                <span class="text-xs bg-blue-600 px-3 py-1 rounded"> local stotage</span>
+                    </div>
+                    <a href="https://to-do-react-aappp.netlify.app/" target="_blank" class="inline-block text-blue-400 hover:text-blue-300 font-bold text-sm pt-2">View Live Demo →</a>
+                </div>
+                <div class="project-card border-l-4 border-blue-500 pl-6 space-y-4 bg-gray-800/50 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold">03. Task Management App</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">Productivity web app to organize tasks and track progress efficiently with a clean and intuitive interface.</p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded">React</span>
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded">JavaScript</span>
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded">Local Storage</span>
+                    </div>
+                    <a href="https://minii-trello.netlify.app/" target="_blank" class="inline-block text-blue-400 hover:text-blue-300 font-bold text-sm pt-2">View Live Demo →</a>
+                </div>
+                  <div class="project-card border-l-4 border-blue-500 pl-6 space-y-4 bg-gray-800/50 p-6 rounded-lg">
+                    <h4 class="text-xl font-bold">04. prayer-times-app
+</h4>
+                    <p class="text-gray-300 text-sm leading-relaxed">About
+A simple web app that displays daily prayer times for any selected city, with live updates and current date display. Built using HTML, CSS, and JavaScripT</p>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded">html</span>
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded">JavaScript</span>
+                        <span class="text-xs bg-blue-600 px-3 py-1 rounded">css</span>
+                    </div>
+                    <a href="https://shahdwalidd.github.io/prayer-times-app/" target="_blank" class="inline-block text-blue-400 hover:text-blue-300 font-bold text-sm pt-2">View Live Demo →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 px-6 max-w-5xl mx-auto text-center">
+        <h3 class="text-3xl font-bold mb-10 uppercase tracking-widest">Get In Touch</h3>
+        <div class="flex flex-wrap justify-center gap-10 text-sm font-bold uppercase tracking-wider mb-10">
+            <div class="space-y-2 hover:scale-105 transition-transform">
+                <i class="fas fa-envelope block text-3xl mb-2 text-blue-600"></i>
+                <a href="mailto:shahdwalid64200@gmail.com" class="text-gray-700 hover:text-blue-600">shahdwalid64200@gmail.com</a>
+            </div>
+            <div class="space-y-2 hover:scale-105 transition-transform">
+                <i class="fas fa-phone block text-3xl mb-2 text-blue-600"></i>
+                <a href="tel:201063213753" class="text-gray-700 hover:text-blue-600">+20 106 321 3753</a>
+            </div>
+            <div class="space-y-2 hover:scale-105 transition-transform">
+                <i class="fas fa-map-marker-alt block text-3xl mb-2 text-blue-600"></i>
+                <p class="text-gray-700">Banha, Egypt</p>
+            </div>
+        </div>
+        <div class="flex justify-center gap-6 text-xl">
+            <a href="https://github.com/shahdwalidd" target="_blank" class="text-gray-700 hover:text-blue-600 transition-all transform hover:scale-110"><i class="fab fa-github"></i></a>
+            <a href="linkedin.com/in/shahd-walid-87a50b2a5" target="_blank" class="text-gray-700 hover:text-blue-600 transition-all transform hover:scale-110"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com" target="_blank" class="text-gray-700 hover:text-blue-600 transition-all transform hover:scale-110"><i class="fab fa-twitter"></i></a>
+        </div>
+    </section>
+
+    <footer class="py-10 border-t border-gray-200 text-center text-xs uppercase tracking-[0.5em] text-gray-600 bg-gray-50">
+        <p>Designed & Built by Shahd Walid | 2026</p>
+    </footer>
+
+</body>
+</html>
